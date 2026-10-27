@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #050b12;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: #07111c;
+    border-bottom: 1px solid rgba(0, 255, 157, 0.2);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    color: #00ff9d !important;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #b8c2cc !important;
+    margin: 0 8px;
+}
+
+.nav-link:hover {
+    color: #00ff9d !important;
+}
+
+.login-nav {
+    border: 1px solid #00ff9d;
+    color: #00ff9d;
+}
+
+.login-nav:hover {
+    background: #00ff9d;
+    color: #03100b;
+}
+
+
+/* ================= PAGES ================= */
+
+.page-section {
+    display: none;
+}
+
+.page-section.active-page {
+    display: block;
+}
+
+
+/* ================= HOME ================= */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(0, 255, 157, 0.12),
+            transparent 35%
+        );
+}
+
+.system-status {
+    color: #00ff9d;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.hero h1 span {
+    color: #00ff9d;
+}
+
+.hero p {
+    color: #9aa7b5;
+    font-size: 18px;
+    max-width: 650px;
+    line-height: 1.8;
+}
+
+.start-btn,
+.main-btn {
+    background: #00ff9d;
+    color: #03100b;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.start-btn:hover,
+.main-btn:hover {
+    background: #00d985;
+    box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);
+}
+
+
+/* ================= SECURITY CARD ================= */
+
+.security-card {
+    background: #07111c;
+    background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('cyber.png');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(0, 255, 157, 0.3);
+    border-radius: 20px;
+    padding: 35px;
+    text-align: center;
+}
+
+.shield {
+    font-size: 70px;
+}
+
+.security-card h3 {
+    color: #9aa7b5;
+}
+
+.security-number {
+    font-size: 50px;
+    font-weight: bold;
+    color: #00ff9d;
+}
+
+.progress {
+    background: #162431;
+    height: 8px;
+}
+
+.progress-bar {
+    background: #00ff9d;
+}
+
+.security-card small {
+    color: #9aa7b5;
+}
+
+.security-card h4 {
+    color: #00ff9d;
+}
+
+
+/* ================= FORM ================= */
+
+.form-container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 40px;
+    background: #07111c;
+    border: 1px solid rgba(0, 255, 157, 0.3);
+    border-radius: 20px;
+}
+
+.form-icon {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.form-container h2,
+.section-title h2 {
+    text-align: center;
+    color: #00ff9d;
+}
+
+.form-container p,
+.section-title p {
+    text-align: center;
+    color: #9aa7b5;
+}
+
+.form-container label {
+    display: block;
+    color: #00ff9d;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    border: 1px solid #263746;
+    background: #050b12;
+    color: white;
+}
+
+
+/* ================= SCAN ================= */
+
+.scan-section {
+    padding: 70px 20px;
+}
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+.scan-card {
+    height: 100%;
+    background: #07111c;
+    border: 1px solid rgba(0, 255, 157, 0.25);
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+}
+
+.scan-card:hover {
+    border-color: #00ff9d;
+    box-shadow: 0 0 25px rgba(0, 255, 157, 0.1);
+}
+
+.scan-icon {
+    font-size: 50px;
+}
+
+.scan-card h3 {
+    color: #00ff9d;
+    margin: 15px 0;
+}
+
+.scan-card p {
+    color: #9aa7b5;
+}
+
+.scan-card input {
+    margin-top: 20px;
+    background: #050b12;
+    color: white;
+    border: 1px solid #263746;
+}
+
+.scan-card .main-btn {
+    width: 100%;
+}
+
+.result-box {
+    display: none;
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+    background: #07111c;
+    border: 1px solid #00ff9d;
+    border-radius: 18px;
+}
+
+.result-box.show {
+    display: block;
+}
+
+.result-box h3 {
+    color: #00ff9d;
+}
+
+
+/* ================= OTHER SECTIONS ================= */
+
+.content-section {
+    padding: 80px 20px;
+    min-height: 70vh;
+}
+.content-section > h2 {
+    color: #00ff9d;
+    margin-bottom: 40px;
+}
+
+.info-card {
+    background: #07111c;
+    border: 1px solid rgba(0, 255, 157, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+.info-card span {
+    display: block;
+    color: #9aa7b5;
+    margin-bottom: 10px;
+}
+
+.info-card strong {
+    color: #00ff9d;
+    font-size: 30px;
+}
+
+.threat-card,
+.about-card {
+    background: #07111c;
+    border: 1px solid rgba(0, 255, 157, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.threat-card h4 {
+    color: #ffcc00;
+}
+
+.threat-card.safe h4 {
+    color: #00ff9d;
+}
+
+.threat-card p,
+.about-card p {
+    color: #9aa7b5;
+    line-height: 1.8;
+}
+
+.about-card h3 {
+    color: #00ff9d;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    background: #07111c;
+    padding: 25px;
+    color: #71808f;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .security-card {
+        margin-top: 40px;
+    }
+
+}
